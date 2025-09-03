@@ -26,7 +26,7 @@ export async function getSheetValues(range: string) {
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.GOOGLE_SHEETS_ID!,
     range,
-    valueRenderOption: "UNFORMATTED_VALUE",
+    valueRenderOption: "FORMATTED_VALUE",
   });
   return res.data.values ?? []; //returns 2d array of values
 }
