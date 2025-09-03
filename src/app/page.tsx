@@ -1,4 +1,5 @@
 import { getSheetObjects } from "@/lib/googleSheets";
+import Link from "next/link";
 
 export const revalidate = 300; // ISR: refresh every 5 minutes (optional)
 export const runtime = "nodejs"; // ensure Node runtime (googleapis needs Node, not Edge)
@@ -9,6 +10,8 @@ export default async function Home() {
 
   return (
     <main className="p-6 space-y-4">
+      <Link href="/create">Create</Link>
+
       <h1 className="text-xl font-semibold">Sheet data</h1>
       <div className="grid gap-2">
         {rows.map((row, i) => (
