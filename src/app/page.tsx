@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { getSheetObjects } from "@/lib/googleSheets";
 
 export const revalidate = 300; // ISR: refresh every 5 minutes (optional)
