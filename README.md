@@ -1,4 +1,4 @@
-For testing Botpress integrations for a blog posting chatbot
+For testing Botpress integrations for a blog posting chatbot. the bot will be hosted here, ideally alongside the blog posts
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
